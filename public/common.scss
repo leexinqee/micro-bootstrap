@@ -1,0 +1,400 @@
+
+*{  
+  // -webkit-touch-callout:none;  /*系统默认菜单被禁用*/  
+  // -webkit-user-select:none; /*webkit浏览器*/  
+  // -khtml-user-select:none; /*早期浏览器*/  
+  // -moz-user-select:none;/*火狐*/  
+  // -ms-user-select:none; /*IE10*/  
+  // user-select:none;  
+  margin: 0;
+  padding: 0;
+} 
+input,textarea {
+  -webkit-user-select:auto; /*webkit浏览器*/
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+}
+*{ -webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transparent; /* For some Androids */ }
+body{
+    background: #fff;
+    font-family: PingFangSC-Regular, sans-serif;
+    background-color: rgba(0,0,0,0.04);
+    // touch-action: none;
+}
+#root {
+  background-color: rgba(0,0,0,.04) !important;
+}
+//iphoneX针对
+.iphoneX{
+  .bottom-tip{
+    padding-bottom: 90px;
+    &:before,&:after{
+      top: 20%;
+    }
+  }
+}
+.cursor{
+  cursor: pointer;
+}
+//背景色
+.bg-white{
+  background: #fff;
+}
+.bg-red{
+  background: #F24E3E;
+}
+.bg-gray{
+  background: #F0F2F5;
+}
+//100%
+.full-w{
+  width: 100%;
+}
+.full-h{
+  height: 100%;
+}
+// 间距
+.mb20{
+    margin-bottom:20px;
+  }
+  .mr50{
+    margin-right: 50px;
+  }
+  .pd50{
+    padding:50px;
+  }
+  .mt50{
+    margin-top:50px;
+  }
+  .mt40{
+    margin-top:40px;
+  }
+  .mt30{
+    margin-top:30px;
+  }
+  .mt20{
+    margin-top:20px;
+  }
+  .mt10{
+    margin-top:10px;
+  }
+  .ml30{
+    margin-left:30px;
+  }
+  .pl10{
+    padding-left: 10px;
+  }
+  .pl20{
+    padding-left: 20px;
+  }
+  .pr10{
+    padding-right: 10px;
+  }
+  .pl50{
+      padding-left: 50px;
+  }
+  .pr50{
+    padding-right: 50px;
+}
+  .mt5{
+    margin-top:5px;
+  }
+  .ml10{
+    margin-left: 10px;
+  }
+  .ml5{
+    margin-left: 5px;
+  }
+  .mr5{
+    margin-right: 5px;
+  }
+  .mr10{
+    margin-right: 10px;
+  }
+  .mr30{
+    margin-right: 30px;
+  }
+  .ml20{
+    margin-left: 20px;
+  }
+  .pd20{
+    padding:20px;
+  }
+  .pd10{
+    padding:10px;
+  }
+  .pt40{
+    padding-top: 40px;
+  }
+  .pt15{
+    padding-top: 15px;
+  }
+  .pt10{
+    padding-top: 10px;
+  }
+  .pt30{
+    padding-top: 30px;
+  }
+  .mr10{
+    margin-right: 10px;
+  }
+  .mr20{
+    margin-right: 20px;
+  }
+  .pb40{
+    padding-bottom: 40px;
+  }
+  .pb30{
+    padding-bottom:30px;
+  }
+  .pd15{
+    padding:15px;
+  }
+  .pb15{
+    padding-bottom:15px;
+  }
+  .pb10{
+    padding-bottom: 10px;
+  }
+  .pb20{
+    padding-bottom: 20px;
+  }
+  .plr24{
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .mt15{
+    margin-top: 15px;
+  }
+  
+//   flex布局
+.flex1{
+    flex: 1;
+  }
+  .flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .flex-stretch {
+    align-items:stretch;
+  }
+  .flex-column{
+    display: flex;
+    flex-direction: column;
+  }
+  .flex-row{
+    display: flex;
+    flex-direction: row;
+  }
+  .flex-middle{
+    display: flex;
+    align-items: center;
+  }
+  .flex-around{
+    display: flex;
+    justify-content: space-around;
+  }
+  .flex-center{
+    display: flex;
+    justify-content:center;
+  }
+  .flex-between{
+    display: flex;
+    justify-content: space-between;
+  }
+  .flex-end{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .align-end{
+    display: flex;
+    align-items: flex-end;
+  }
+  .align-between{
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  //文字
+  .multiple-lines {
+    text-overflow: -o-ellipsis-lastline;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 2;
+   line-clamp: 2;
+   -webkit-box-orient: vertical;
+ }
+ .one-lines {
+    text-overflow: -o-ellipsis-lastline;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 1;
+   line-clamp: 1;
+   -webkit-box-orient: vertical;
+ }
+ .text-middle{
+   vertical-align: middle;
+ }
+ .text-overflow{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+ }
+  .text-left{
+    text-align: left;
+  }
+  .text-right{
+    text-align: right;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-nowrap{
+    white-space: nowrap;
+  }
+  .overflow {
+    overflow: hidden;
+  }
+  .font-bold{
+    font-weight: bold;
+  }
+  .font12 {
+    font-size: 12px;
+  }
+  .font13 {
+    font-size: 13px;
+  }
+  .font14{
+    font-size: 14px;
+  }
+  .font15{
+    font-size: 15px;
+  }
+  .font16{
+    font-size: 16px;
+  }
+  .font17{
+    font-size: 17px; 
+  }
+  .font18 {
+    font-size: 18px;
+  }
+  .font20 {
+    font-size: 20px;
+  }
+  .font22 {
+    font-size: 22px;
+  }
+  .font24{
+    font-size: 24px;
+  }
+.font28 {
+    font-size: 28px;
+  }
+  .font30 {
+    font-size: 30px;
+  }
+  .font60 {
+    font-size: 60px !important;
+  }
+  .white{
+    color: #fff;
+  }
+  .black{
+    color: #000;
+  }
+  .blue{
+    color:#388DED;
+  }
+  .red{
+    color: red;
+  }
+  .color-888{
+    color:#888888;
+  }
+  .color-href{
+    color: #1890FF;
+  }
+  .bold{
+    font-weight: bold;
+  }
+//灰度
+.gray{
+    color:rgba(0,0,0,0.5)
+   }
+   .gray-25{
+    color:rgba(0,0,0,0.25)
+   }
+   .gray-85{
+     color:rgba(0,0,0,0.85)
+   }
+   .gray-45{
+     color:rgba(0,0,0,0.45)
+   }
+   .gray-60{
+    color:rgba(0,0,0,0.60)
+  }
+   .gray-65{
+     color:rgba(0,0,0,0.65)
+   }
+   .gray-70{
+    color:rgba(0,0,0,0.7)
+   }
+   //浮动
+   .fl{
+    float: left;
+  }
+  .fr{
+    float: right;
+  }
+  .relative{
+    position: relative;
+  }
+  .absolute-center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .border-box{
+    box-sizing: border-box;
+  }
+  //线
+  .border-right{
+    border-right: 1px solid #E5E5E5;;
+  }
+  .border-left{
+    border-left: 1px solid #E5E5E5;;
+  }
+  .border-top{
+    border-top: 1px solid #E5E5E5;;
+  }
+  .border-bottom{
+    border-bottom: 1px solid #E5E5E5;;
+  }
+  .border{
+    border: 1px solid #E5E5E5;
+  }
+  .border-right-none{
+    border-right: none;
+  }
+  .border-left-none{
+    border-left: none;
+  }
+  .border-top-none{
+    border-top: none;
+  }
+  .border-bottom-none{
+    border-bottom: none;
+  }
+  .border-color{
+    border: 1px solid #1890FF !important;
+  }

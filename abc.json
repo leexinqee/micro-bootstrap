@@ -1,0 +1,12 @@
+{
+    "assets":{
+        "type":"command",
+        "command":{
+            "cmd":[
+                "tnpm install",
+                "tnpm run build",
+                "mkdir -p $BUILD_DEST && mv ./build/index.html ./build/ $BUILD_DEST"
+            ]
+        }
+    }
+  }
